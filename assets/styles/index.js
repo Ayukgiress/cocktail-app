@@ -3,7 +3,7 @@ const prev = document.getElementById('prev')
 const next = document.getElementById('next')
 let currentIndex = 0
 let drinks = []
-let result = 0
+const result = 0
 
 fetch(api)
   .then((response) => response.json())
