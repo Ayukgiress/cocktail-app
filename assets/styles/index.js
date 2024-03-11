@@ -1,9 +1,9 @@
 const api = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s='
 const prev = document.getElementById('prev')
 const next = document.getElementById('next')
-const searchInput = document.getElementById('search-value')
 let currentIndex = 0
 let drinks = []
+let result = 0
 
 fetch(api)
   .then((response) => response.json())
@@ -18,7 +18,7 @@ fetch(api)
   })
   .catch((error) => console.error('Error fetching data:', error))
 
-function displayDrinks() {
+function displayDrinks () {
   const drinksContainer = document.getElementById('result')
   drinksContainer.innerHTML = `
             <h2>${drinks[currentIndex].strDrink}</h2>
@@ -30,7 +30,7 @@ function displayDrinks() {
   const popup = document.getElementById('instructionsPopup')
 
   img.addEventListener('mouseover', function () {
-    popup.classList.add("show")
+    popup.classList.add('show')
   })
 
   img.addEventListener('mouseout', function () {
