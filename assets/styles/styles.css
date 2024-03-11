@@ -1,0 +1,161 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #06061b;
+  text-align: center;
+  justify-content: center;
+  color: #f5f6f7;
+}
+
+.main {
+  align-items: center;
+  justify-content: center;
+  background-color: #cdcde2;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 10px;
+  height: 100vh;
+  overflow: scroll;
+  border: 5px solid #fac104;
+  margin: 10px;
+}
+
+#search-value {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  background-color: #ffa500;
+  width: 25vw;
+  height: 5vh;
+  position: fixed;
+  border-radius: 5px;
+  border: 2px solid #0000ff;
+  outline: none;
+  margin-left: 73%;
+  font-size: 15px;
+}
+
+.img {
+  width: 60vw;
+  height: 100vh;
+  margin: 10px;
+  border: 5px solid rgb(14, 13, 12);
+}
+
+
+.design-card {
+  background-color: aliceblue;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 80vw;
+  margin-left: 9%;
+  border-radius: 30px;
+  
+}
+
+
+.container {
+  align-items: start;
+  justify-content: start;
+  width: 25vw;
+  height: 40vh;
+  margin-left: 10px;
+  margin-top: 20px;
+  border-radius: 10%;
+}
+
+.design-card {
+  background-color: rgb(241, 168, 8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 5px solid black;
+}
+
+.cocktails {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.sub-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 80px;
+}
+
+.trim {
+  width: 13vw;
+  height: 25vh;
+  border-radius: 50%;
+}
+
+.text {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+#result {
+  position: relative;
+  text-align: center;
+}
+
+.popup {
+  visibility: hidden;
+  width: 200px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 50%;
+  left: 50%;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.popup.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+#btn-class {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25rem;
+}
+
+button {
+  width: 8vw;
+  height: 5vh;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: #11112c;
+  outline: none;
+  color: #fff;
+  font-size: 17px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+button:hover, button:focus {
+  color: #000;
+  background-color: purple;
+}
+
