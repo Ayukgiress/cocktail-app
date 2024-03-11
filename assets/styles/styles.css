@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -46,21 +48,18 @@ body {
   width: 60vw;
   height: 100vh;
   margin: 10px;
-  border: 5px solid rgb(14, 13, 12);
+  border: 5px solid #0e0d0c;
 }
 
-
 .design-card {
-  background-color: aliceblue;
+  background-color: #f0f8ff;
   align-items: center;
   justify-content: center;
   height: 50vh;
   width: 80vw;
   margin-left: 9%;
   border-radius: 30px;
-  
 }
-
 
 .container {
   align-items: start;
@@ -73,17 +72,17 @@ body {
 }
 
 .design-card {
-  background-color: rgb(241, 168, 8);
+  background-color: #f1a808;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 5px solid black;
+  border: 5px solid #000000;
 }
 
 .cocktails {
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sub-style {
@@ -133,7 +132,6 @@ justify-content: center;
   opacity: 1;
 }
 
-
 #btn-class {
   display: flex;
   align-items: center;
@@ -150,12 +148,12 @@ button {
   outline: none;
   color: #fff;
   font-size: 17px;
-  border: 2px solid black;
+  border: 2px solid #000000;
   cursor: pointer;
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
   color: #000;
-  background-color: purple;
+  background-color: #800080;
 }
-
